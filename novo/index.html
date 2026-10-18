@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Midnight Frequency — Private Recordings</title>
+<meta name="description" content="A short private presentation about the 7-second evening practice for attracting wealth and abundance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Cole aqui seus pixels/tags (Meta, GA4, Clarity, etc.) -->
+
+<style>
+  :root{
+    --ink:#0d1321;
+    --ink-2:#151d30;
+    --ink-3:#1f2a44;
+    --line:rgba(232,201,138,.18);
+    --gold:#e8c98a;
+    --gold-2:#c99a45;
+    --cream:#f6f1e7;
+    --text:#d9dce4;
+    --muted:#8f97ab;
+    --green:#2fbf71;
+    --green-2:#23a35e;
+    --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    background:var(--ink);
+    color:var(--text);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background:
+      radial-gradient(900px 500px at 50% -10%, rgba(232,201,138,.16), transparent 60%),
+      radial-gradient(700px 600px at 100% 40%, rgba(79,98,170,.18), transparent 60%),
+      radial-gradient(600px 500px at 0% 80%, rgba(79,98,170,.12), transparent 60%);
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{width:100%;max-width:880px;margin:0 auto;padding:0 18px}
+  .wrap-sm{max-width:720px}
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    background:linear-gradient(90deg,#7a1f2b,#a32a38,#7a1f2b);
+    color:#fff;text-align:center;font-size:14px;font-weight:600;
+    padding:10px 14px;letter-spacing:.2px;
+  }
+  .topbar b{color:#ffe1a8}
+
+  /* ---------- hero ---------- */
+  .hero{padding:44px 0 28px;text-align:center}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;
+    color:var(--gold);border:1px solid var(--line);border-radius:999px;
+    padding:7px 14px;background:rgba(232,201,138,.06);
+  }
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:#ff5a5a;box-shadow:0 0 0 0 rgba(255,90,90,.7);animation:pulse 1.6s infinite}
+  @keyframes pulse{70%{box-shadow:0 0 0 9px rgba(255,90,90,0)}100%{box-shadow:0 0 0 0 rgba(255,90,90,0)}}
+  h1{
+    font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;
+    color:var(--cream);font-size:clamp(32px,5.6vw,54px);line-height:1.08;
+    margin:20px auto 14px;max-width:780px;letter-spacing:-.3px;
+  }
+  h1 em{font-style:italic;color:var(--gold)}
+  .sub{font-size:clamp(16px,2.2vw,19px);color:var(--muted);max-width:620px;margin:0 auto}
+  .sub strong{color:var(--text)}
+
+  /* ---------- video ---------- */
+  .video-shell{
+    margin:30px auto 0;max-width:820px;padding:10px;border-radius:24px;
+    background:linear-gradient(145deg,rgba(232,201,138,.55),rgba(232,201,138,.05) 40%,rgba(232,201,138,.35));
+    box-shadow:0 30px 80px -20px rgba(0,0,0,.7);
+  }
+  .video{position:relative;padding-top:56.25%;border-radius:16px;overflow:hidden;background:#000}
+  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .sound{
+    margin-top:14px;font-size:14px;color:var(--muted);
+    display:flex;align-items:center;justify-content:center;gap:8px;
+  }
+  .sound svg{width:18px;height:18px;flex:none}
+
+  /* ---------- offer card ---------- */
+  .offer{padding:34px 0 10px}
+  .card{
+    background:linear-gradient(180deg,var(--ink-2),var(--ink-3));
+    border:1px solid var(--line);border-radius:var(--radius);
+    padding:30px 26px;text-align:center;
+    box-shadow:0 20px 60px -30px rgba(0,0,0,.8);
+  }
+  .card .label{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .price-row{display:flex;align-items:baseline;justify-content:center;gap:14px;margin:8px 0 4px;flex-wrap:wrap}
+  .price-old{color:var(--muted);text-decoration:line-through;font-size:22px;font-weight:600}
+  .price{font-family:"Cormorant Garamond",Georgia,serif;color:var(--cream);font-size:68px;font-weight:700;line-height:1}
+  .price small{font-size:.45em;vertical-align:top;position:relative;top:.35em;margin-right:2px;color:var(--gold)}
+  .price-note{font-size:14px;color:var(--muted);margin-bottom:22px}
+
+  .btn{
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    width:100%;max-width:520px;margin:0 auto;text-decoration:none;
+    background:linear-gradient(180deg,var(--green),var(--green-2));
+    color:#fff;border-radius:14px;padding:18px 22px;
+    box-shadow:0 10px 0 -2px #187a45, 0 18px 40px -10px rgba(47,191,113,.55);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .btn:active{transform:translateY(4px);box-shadow:0 4px 0 -2px #187a45,0 10px 24px -10px rgba(47,191,113,.55)}
+  .btn .big{font-size:clamp(18px,3vw,22px);font-weight:800;letter-spacing:.3px;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+  .btn .small{font-size:13px;opacity:.9;font-weight:500;margin-top:2px}
+  .btn svg{width:20px;height:20px}
+
+  .trust{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 18px;margin-top:20px;font-size:13px;color:var(--muted)}
+  .trust span{display:inline-flex;align-items:center;gap:6px}
+  .trust svg{width:15px;height:15px;color:var(--gold)}
+  .cards-pay{display:flex;justify-content:center;gap:6px;margin-top:14px}
+  .cards-pay i{
+    display:inline-block;font-style:normal;font-size:10px;font-weight:800;letter-spacing:.5px;
+    padding:5px 8px;border-radius:5px;background:#fff;color:#1a1f36;
+  }
+
+  /* ---------- section headings ---------- */
+  section{padding:60px 0}
+  .kicker{font-size:12px;letter-spacing:2.4px;text-transform:uppercase;color:var(--gold);font-weight:700;text-align:center}
+  h2{
+    font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;color:var(--cream);
+    font-size:clamp(28px,4.4vw,42px);line-height:1.12;text-align:center;margin:10px auto 14px;max-width:700px;
+  }
+  h2 em{color:var(--gold);font-style:italic}
+  .lead{text-align:center;color:var(--muted);max-width:600px;margin:0 auto 36px}
+
+  /* ---------- stack ---------- */
+  .stack{display:grid;gap:16px}
+  .item{
+    display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:center;
+    background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;
+  }
+  .item.main{background:linear-gradient(135deg,rgba(232,201,138,.10),rgba(255,255,255,.02));border-color:rgba(232,201,138,.4)}
+  .tag{
+    display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;
+    padding:4px 10px;border-radius:999px;background:rgba(232,201,138,.14);color:var(--gold);margin-bottom:8px;
+  }
+  .tag.free{background:rgba(47,191,113,.14);color:#6fe0a3}
+  .item h3{font-family:"Cormorant Garamond",Georgia,serif;color:var(--cream);font-size:24px;line-height:1.15;margin-bottom:6px}
+  .item p{font-size:15px;color:var(--text);opacity:.85}
+  .value{margin-top:10px;font-size:13px;color:var(--muted)}
+  .value s{margin-right:6px}
+  .value b{color:#6fe0a3}
+
+  /* CSS book covers (no third-party images) */
+  .cover{
+    position:relative;width:110px;height:150px;margin:0 auto;border-radius:4px 10px 10px 4px;
+    display:flex;flex-direction:column;justify-content:space-between;padding:14px 10px 12px 16px;
+    color:#fff;overflow:hidden;
+    box-shadow:inset 6px 0 0 rgba(0,0,0,.25), inset 8px 0 0 rgba(255,255,255,.08), 8px 12px 24px -6px rgba(0,0,0,.6);
+    transform:perspective(500px) rotateY(-12deg);
+  }
+  .cover::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.18),transparent 45%)}
+  .cover .ct{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:16px;line-height:1.05}
+  .cover .cs{font-size:8px;letter-spacing:1.4px;text-transform:uppercase;opacity:.8}
+  .cover .sym{font-size:30px;line-height:1;opacity:.9}
+  .c-main{background:radial-gradient(circle at 70% 30%,#3b4a7a,#121a33 70%);border:1px solid rgba(232,201,138,.5)}
+  .c-main .ct{color:var(--gold)}
+  .c-1{background:linear-gradient(160deg,#6b4e1f,#2b1f0c)}
+  .c-2{background:linear-gradient(160deg,#3d2c6b,#160f2e)}
+  .c-3{background:linear-gradient(160deg,#1f5a48,#0a241c)}
+
+  .total{
+    margin-top:22px;text-align:center;padding:18px;border-radius:14px;border:1px dashed var(--line);
+    font-size:16px;color:var(--muted)
+  }
+  .total b{color:var(--cream)}
+  .total .today{display:block;font-size:20px;color:var(--gold);font-weight:700;margin-top:4px}
+
+  /* ---------- how it works ---------- */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
+  .step{
+    background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:var(--radius);padding:24px 20px;
+  }
+  .step::before{
+    counter-increment:s;content:counter(s);
+    display:grid;place-items:center;width:38px;height:38px;border-radius:50%;
+    background:var(--gold);color:var(--ink);font-weight:800;margin-bottom:14px;
+  }
+  .step h4{color:var(--cream);font-size:17px;margin-bottom:6px}
+  .step p{font-size:14.5px;color:var(--muted)}
+
+  /* ---------- guarantee ---------- */
+  .guarantee{
+    display:grid;grid-template-columns:170px 1fr;gap:28px;align-items:center;
+    background:linear-gradient(135deg,rgba(47,191,113,.08),rgba(255,255,255,.02));
+    border:1px solid rgba(47,191,113,.3);border-radius:var(--radius);padding:30px;
+  }
+  .seal{width:160px;height:160px;margin:0 auto}
+  .guarantee h3{font-family:"Cormorant Garamond",Georgia,serif;color:var(--cream);font-size:30px;line-height:1.1;margin-bottom:10px}
+  .guarantee p{color:var(--text);opacity:.88;font-size:15.5px}
+  .guarantee p+p{margin-top:10px}
+
+  /* ---------- author ---------- */
+  .note{
+    background:var(--cream);color:#2a2a2a;border-radius:var(--radius);padding:34px 30px;
+    font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;line-height:1.5;position:relative;
+  }
+  .note::before{content:"\201C";position:absolute;top:-6px;left:18px;font-size:90px;color:var(--gold-2);opacity:.5;line-height:1}
+  .note p+p{margin-top:12px}
+  .note .sign{margin-top:18px;font-style:italic;color:#6b5a3a}
+
+  /* ---------- faq ---------- */
+  .faq{display:grid;gap:10px}
+  details{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:14px;padding:0 20px}
+  summary{
+    list-style:none;cursor:pointer;padding:18px 0;font-weight:600;color:var(--cream);
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:22px;color:var(--gold);transition:transform .2s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{padding:0 0 18px;color:var(--muted);font-size:15px}
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--line);padding:34px 0 110px;text-align:center;font-size:12.5px;color:#6c7488}
+  footer nav{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:14px}
+  footer nav a{color:var(--muted);text-decoration:none}
+  footer nav a:hover{color:var(--gold)}
+  footer p{max-width:720px;margin:8px auto 0}
+
+  /* ---------- sticky mobile cta ---------- */
+  .sticky{
+    position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+    background:rgba(13,19,33,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);
+    display:flex;align-items:center;gap:12px;transform:translateY(110%);transition:transform .3s ease;
+  }
+  .sticky.show{transform:none}
+  .sticky .sp{font-size:12px;color:var(--muted);line-height:1.2;white-space:nowrap}
+  .sticky .sp b{display:block;font-size:22px;color:var(--cream);font-family:"Cormorant Garamond",Georgia,serif}
+  .sticky .btn{padding:12px 14px;box-shadow:0 6px 0 -2px #187a45}
+  .sticky .btn .big{font-size:15px}
+
+  /* CTA reveal (opcional, sincronizado com o VSL) */
+  .reveal{display:none}
+  .reveal.on{display:block;animation:fade .6s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+  @media (max-width:720px){
+    .hero{padding-top:30px}
+    .item{grid-template-columns:1fr;text-align:center}
+    .steps{grid-template-columns:1fr}
+    .guarantee{grid-template-columns:1fr;text-align:center;padding:26px 20px}
+    .card{padding:26px 18px}
+    .note{padding:30px 22px;font-size:19px}
+    section{padding:46px 0}
+  }
+  @media (min-width:721px){.sticky{display:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  ⚠ This private presentation may be taken down at any time — available until <b class="js-date">today</b>
+</div>
+
+<!-- ================= HERO + VSL ================= -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span> Private presentation · 7-second practice</span>
+    <h1>The quiet <em>7-second ritual</em> that opens the door to wealth &amp; abundance</h1>
+    <p class="sub">A short presentation recorded for people who are tired of <strong>working harder</strong> while money keeps slipping away. Watch it to the end — the most important part comes last.</p>
+
+    <div class="video-shell">
+      <div class="video">
+        <!-- Troque pelo embed do SEU vídeo (Panda, Vturb, YouTube...) -->
+        <iframe id="panda-9c0fd323-2442-4a27-9acd-000808387941"
+          src="https://player-vz-1b51e3d4-0a6.tv.pandavideo.com/embed/?v=9c0fd323-2442-4a27-9acd-000808387941&amp;iosFakeFullscreen=true"
+          allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen fetchpriority="high"></iframe>
+      </div>
+    </div>
+    <p class="sound">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+      Make sure your sound is on · The video may take a few seconds to load
+    </p>
+  </div>
+</header>
+
+<!-- ================= OFFER (aparece após o delay do VSL, se configurado) ================= -->
+<div class="reveal" id="offer-block">
+
+<div class="offer">
+  <div class="wrap wrap-sm">
+    <div class="card" id="offer">
+      <div class="label">Complete access · One-time payment</div>
+      <div class="price-row">
+        <span class="price-old">$197</span>
+        <span class="price"><small>$</small><span class="js-price">37</span></span>
+      </div>
+      <div class="price-note">No subscription · Instant digital access</div>
+
+      <a class="btn js-cta" href="#">
+        <span class="big">Yes, I want access
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+        <span class="small">Includes the recordings + 3 free bonuses</span>
+      </a>
+
+      <div class="trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Secure checkout</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg><span><span class="js-days">60</span>-day guarantee</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>Instant access</span>
+      </div>
+      <div class="cards-pay"><i>VISA</i><i>MC</i><i>AMEX</i><i>PAYPAL</i></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= STACK ================= -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Everything you receive today</p>
+    <h2>The recordings, plus <em>three gifts</em> to speed up your results</h2>
+    <p class="lead">Join today and you'll get the full audio program along with three companion guides — free.</p>
+
+    <div class="stack">
+      <div class="item main">
+        <div class="cover c-main"><span class="cs">Audio program</span><span class="sym">☾</span><span class="ct">The Midnight Frequency</span></div>
+        <div>
+          <span class="tag">Main program</span>
+          <h3>The Midnight Frequency Recordings</h3>
+          <p>Short guided audio sessions designed to be played in the minutes before you fall asleep — the moment your mind is most open to new beliefs about money.</p>
+          <div class="value">Value: <b>$197</b></div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="cover c-1"><span class="cs">Bonus 01</span><span class="sym">✦</span><span class="ct">Quick-Start Companion</span></div>
+        <div>
+          <span class="tag free">Free gift #1</span>
+          <h3>The Quick-Start Companion</h3>
+          <p>A step-by-step walkthrough showing exactly when and how to listen so you get the most from every session — and start noticing the shift sooner.</p>
+          <div class="value"><s>$47</s> <b>FREE today</b></div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="cover c-2"><span class="cs">Bonus 02</span><span class="sym">◉</span><span class="ct">The Third-Eye Reset</span></div>
+        <div>
+          <span class="tag free">Free gift #2</span>
+          <h3>The Third-Eye Reset Plan</h3>
+          <p>Simple daily habits around food, light and rest to help you feel clearer, calmer and more focused — so the recordings can do their work.</p>
+          <div class="value"><s>$39</s> <b>FREE today</b></div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="cover c-3"><span class="cs">Bonus 03</span><span class="sym">$</span><span class="ct">Abundance Affirmations</span></div>
+        <div>
+          <span class="tag free">Free gift #3</span>
+          <h3>The Abundance Affirmation Scripts</h3>
+          <p>Ready-to-read scripts that train your subconscious to recognize opportunity. Read them alongside the recordings for a deeper effect.</p>
+          <div class="value"><s>$37</s> <b>FREE today</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="total">
+      Total value: <b>$320</b>
+      <span class="today">Your price today: $<span class="js-price">37</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section style="padding-top:10px">
+  <div class="wrap">
+    <p class="kicker">How it works</p>
+    <h2>Three minutes a night. <em>That's it.</em></h2>
+    <p class="lead">No affirmations shouted at the mirror, no hours of meditation. Just a simple routine that fits into the end of your day.</p>
+    <div class="steps">
+      <div class="step"><h4>Get instant access</h4><p>Your login arrives by email seconds after checkout. Listen on any phone, tablet or computer.</p></div>
+      <div class="step"><h4>Press play before sleep</h4><p>Put on headphones, relax and let the recording guide you. The 7-second practice is inside.</p></div>
+      <div class="step"><h4>Notice the shift</h4><p>Pay attention to new ideas, opportunities and the way you feel about money in the days that follow.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GUARANTEE ================= -->
+<section style="padding-top:10px">
+  <div class="wrap">
+    <div class="guarantee">
+      <svg class="seal" viewBox="0 0 200 200" aria-hidden="true">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3dca6"/><stop offset="1" stop-color="#b8862f"/></linearGradient>
+          <path id="arc" d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0"/>
+        </defs>
+        <g fill="url(#g)">
+          <polygon points="100,4 112,20 131,10 137,30 158,28 156,49 176,56 167,74 184,86 170,100 184,114 167,126 176,144 156,151 158,172 137,170 131,190 112,180 100,196 88,180 69,190 63,170 42,172 44,151 24,144 33,126 16,114 30,100 16,86 33,74 24,56 44,49 42,28 63,30 69,10 88,20"/>
+        </g>
+        <circle cx="100" cy="100" r="62" fill="#0d1321"/>
+        <circle cx="100" cy="100" r="56" fill="none" stroke="#e8c98a" stroke-width="1.5" stroke-dasharray="3 4"/>
+        <text x="100" y="98" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="46" font-weight="700" fill="#f6f1e7" class="js-days-svg">60</text>
+        <text x="100" y="118" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="800" letter-spacing="2" fill="#e8c98a">DAY</text>
+        <text x="100" y="133" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.5" fill="#8f97ab">MONEY-BACK</text>
+      </svg>
+      <div>
+        <h3>Try it for <span class="js-days">60</span> days. Love it — or get every cent back.</h3>
+        <p>Listen to the recordings, use the bonuses and follow the routine. If you don't feel it was worth far more than you paid, send one email and you'll get a full refund. No questions, no hoops.</p>
+        <p>You keep the bonuses either way. The only thing you risk is staying exactly where you are.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PERSONAL NOTE ================= -->
+<section style="padding-top:10px">
+  <div class="wrap wrap-sm">
+    <div class="note">
+      <p>For most of my life I kept this practice to myself. I wasn't sure people would believe it — and honestly, I wasn't sure I was ready to share it.</p>
+      <p>But I've watched it change too many lives to keep quiet any longer. If it can do for you even a fraction of what it did for me, then sharing it was worth it.</p>
+      <p class="sign">— <span class="js-author">Your name here</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section style="padding-top:10px">
+  <div class="wrap wrap-sm">
+    <p class="kicker">Questions</p>
+    <h2>Before you decide</h2>
+    <div class="faq">
+      <details><summary>How do I get access after I order?</summary><p>Right after checkout you'll receive an email with your login details. Everything is digital, so you can start listening the same night.</p></details>
+      <details><summary>Is this a subscription?</summary><p>No. It's a single one-time payment of $<span class="js-price">37</span>. There are no recurring charges.</p></details>
+      <details><summary>Do I need any special equipment?</summary><p>Just a phone or computer and, ideally, a pair of headphones. The sessions work best in a quiet room before sleep.</p></details>
+      <details><summary>What if it doesn't work for me?</summary><p>You're covered by our <span class="js-days">60</span>-day money-back guarantee. Email support and you'll receive a full refund.</p></details>
+      <details><summary>How long are the sessions?</summary><p>Each session is short enough to fit into your nightly routine. The core practice itself takes only a few seconds once you've learned it.</p></details>
+    </div>
+
+    <div style="margin-top:36px">
+      <a class="btn js-cta" href="#">
+        <span class="big">Get instant access — $<span class="js-price">37</span></span>
+        <span class="small">Protected by our <span class="js-days">60</span>-day guarantee</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</div><!-- /reveal -->
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="#" class="js-terms">Terms &amp; Conditions</a>
+      <a href="#" class="js-privacy">Privacy Policy</a>
+      <a href="#" class="js-support">Contact</a>
+    </nav>
+    <p>© <span class="js-year">2026</span> · All rights reserved.</p>
+    <p>Results vary from person to person. The information on this page is for educational and inspirational purposes only and is not financial, medical or psychological advice. No income or specific outcome is guaranteed.</p>
+    <p>This site is not part of the Facebook™ website or Meta Platforms, Inc. and is not endorsed by Facebook in any way. FACEBOOK is a trademark of Meta Platforms, Inc.</p>
+  </div>
+</footer>
+
+<!-- sticky mobile CTA -->
+<div class="sticky" id="sticky" aria-hidden="true">
+  <div class="sp">Today only<b>$<span class="js-price">37</span></b></div>
+  <a class="btn js-cta" href="#"><span class="big">Get access now</span></a>
+</div>
+
+<script>
+/* ===================== CONFIGURAÇÃO — edite aqui ===================== */
+var CONFIG = {
+  checkoutUrl: "#",        // link do checkout / hoplink
+  price: "37",             // preço exibido
+  guaranteeDays: 60,       // dias de garantia
+  author: "Your name here",// assinatura da nota pessoal
+  termsUrl: "#",
+  privacyUrl: "#",
+  supportEmail: "support@yourdomain.com",
+  revealAfterSeconds: 0    // ex.: 1140 = mostra a oferta aos 19 min do vídeo (0 = mostra direto)
+};
+/* ==================================================================== */
+
+(function(){
+  function all(sel){return Array.prototype.slice.call(document.querySelectorAll(sel));}
+  function setText(sel,v){all(sel).forEach(function(el){el.textContent=v;});}
+
+  all(".js-cta").forEach(function(a){a.href=CONFIG.checkoutUrl;});
+  setText(".js-price",CONFIG.price);
+  setText(".js-days",CONFIG.guaranteeDays);
+  setText(".js-days-svg",CONFIG.guaranteeDays);
+  setText(".js-author",CONFIG.author);
+  setText(".js-year",new Date().getFullYear());
+  all(".js-terms").forEach(function(a){a.href=CONFIG.termsUrl;});
+  all(".js-privacy").forEach(function(a){a.href=CONFIG.privacyUrl;});
+  all(".js-support").forEach(function(a){a.href="mailto:"+CONFIG.supportEmail;});
+
+  var d=new Date();
+  setText(".js-date",d.toLocaleDateString("en-US",{weekday:"long",month:"long",day:"numeric",year:"numeric"}));
+
+  var offer=document.getElementById("offer-block");
+  var sticky=document.getElementById("sticky");
+  var revealed=false;
+  function reveal(){
+    if(revealed)return;revealed=true;
+    offer.classList.add("on");
+    try{localStorage.setItem("offer_revealed","1");}catch(e){}
+  }
+  var seen=false;try{seen=localStorage.getItem("offer_revealed")==="1";}catch(e){}
+  if(!CONFIG.revealAfterSeconds||seen){reveal();}
+  else{setTimeout(reveal,CONFIG.revealAfterSeconds*1000);}
+
+  window.addEventListener("scroll",function(){
+    var show=revealed&&window.scrollY>700;
+    sticky.classList.toggle("show",show);
+    sticky.setAttribute("aria-hidden",show?"false":"true");
+  },{passive:true});
+})();
+</script>
+</body>
+</html>
