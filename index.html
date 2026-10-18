@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Midnight Frequency — Private Recordings</title>
-<meta name="description" content="A short private presentation about the 7-second evening practice for attracting wealth and abundance.">
+<title>The Midnight Frequency — Evening Abundance Recordings</title>
+<meta name="description" content="Why your mind quietly resets your 'money ceiling' every night — and the short evening recording designed to raise it.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -180,6 +180,25 @@
   .total b{color:var(--cream)}
   .total .today{display:block;font-size:20px;color:var(--gold);font-weight:700;margin-top:4px}
 
+  /* ---------- for you ---------- */
+  .checks{list-style:none;display:grid;gap:12px;margin-top:26px}
+  .checks li{
+    position:relative;padding:16px 18px 16px 54px;border-radius:14px;
+    background:rgba(255,255,255,.03);border:1px solid var(--line);font-size:16px;color:var(--text);
+  }
+  .checks li::before{
+    content:"✓";position:absolute;left:16px;top:50%;transform:translateY(-50%);
+    width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+    background:var(--gold);color:var(--ink);font-weight:800;font-size:14px;
+  }
+
+  /* ---------- discover ---------- */
+  .band{background:linear-gradient(180deg,rgba(232,201,138,.06),rgba(232,201,138,.02));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .discover{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 36px;margin-top:30px}
+  .discover div{padding-left:18px;border-left:2px solid var(--gold)}
+  .discover b{display:block;color:var(--cream);font-size:17px;margin-bottom:4px}
+  .discover p{color:var(--muted);font-size:15px}
+
   /* ---------- how it works ---------- */
   .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
   .step{
@@ -253,6 +272,8 @@
     .hero{padding-top:30px}
     .item{grid-template-columns:1fr;text-align:center}
     .steps{grid-template-columns:1fr}
+    .discover{grid-template-columns:1fr;gap:20px}
+    .checks li{font-size:15px}
     .guarantee{grid-template-columns:1fr;text-align:center;padding:26px 20px}
     .card{padding:26px 18px}
     .note{padding:30px 22px;font-size:19px}
@@ -264,15 +285,15 @@
 <body>
 
 <div class="topbar">
-  ⚠ This private presentation may be taken down at any time — available until <b class="js-date">today</b>
+  🌙 Launch pricing ends soon — this price is guaranteed until <b class="js-date">today</b>
 </div>
 
 <!-- ================= HERO + VSL ================= -->
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow"><span class="dot"></span> Private presentation · 7-second practice</span>
-    <h1>The quiet <em>7-second ritual</em> that opens the door to wealth &amp; abundance</h1>
-    <p class="sub">A short presentation recorded for people who are tired of <strong>working harder</strong> while money keeps slipping away. Watch it to the end — the most important part comes last.</p>
+    <span class="eyebrow"><span class="dot"></span> Free presentation · Watch before bed</span>
+    <h1>Your mind quietly resets your <em>“money ceiling”</em> every night. Here's how to raise it.</h1>
+    <p class="sub">If you've ever earned more only to watch it disappear just as fast, this short presentation explains why — and the <strong>simple evening listening routine</strong> designed to change it.</p>
 
     <div class="video-shell">
       <div class="video">
@@ -319,12 +340,43 @@
   </div>
 </div>
 
+<!-- ================= FOR YOU ================= -->
+<section>
+  <div class="wrap wrap-sm">
+    <p class="kicker">Is this for you?</p>
+    <h2>This was made for you <em>if…</em></h2>
+    <ul class="checks">
+      <li>You work hard, yet there's never quite enough left at the end of the month.</li>
+      <li>Every time you get ahead, an unexpected bill or setback pulls you back.</li>
+      <li>You've tried affirmations or vision boards but they never seemed to “stick”.</li>
+      <li>You lie awake at night with money worries running through your head.</li>
+      <li>You want a calm, simple routine — not another complicated course.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= DISCOVER ================= -->
+<section class="band">
+  <div class="wrap">
+    <p class="kicker">Inside the program</p>
+    <h2>What you'll <em>discover</em></h2>
+    <div class="discover">
+      <div><b>The “money ceiling” effect</b><p>Why your mind pulls you back to a familiar income level — and how to stop it.</p></div>
+      <div><b>The 20-minute window</b><p>The drowsy period before sleep when new beliefs settle in most easily.</p></div>
+      <div><b>The evening listening routine</b><p>Exactly what to play, when, and for how long — so it fits even a busy schedule.</p></div>
+      <div><b>Spotting opportunity</b><p>How to notice the openings, ideas and conversations you used to walk right past.</p></div>
+      <div><b>Letting go of money guilt</b><p>A gentle exercise to release the old stories that make you feel you don't deserve more.</p></div>
+      <div><b>Making it last</b><p>How to keep the momentum going long after the first few weeks.</p></div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= STACK ================= -->
 <section>
   <div class="wrap">
     <p class="kicker">Everything you receive today</p>
-    <h2>The recordings, plus <em>three gifts</em> to speed up your results</h2>
-    <p class="lead">Join today and you'll get the full audio program along with three companion guides — free.</p>
+    <h2>The full program, plus <em>three bonuses</em></h2>
+    <p class="lead">Order today and, along with the core recordings, you'll receive three extras to support your new evening routine — at no extra cost.</p>
 
     <div class="stack">
       <div class="item main">
@@ -332,38 +384,38 @@
         <div>
           <span class="tag">Main program</span>
           <h3>The Midnight Frequency Recordings</h3>
-          <p>Short guided audio sessions designed to be played in the minutes before you fall asleep — the moment your mind is most open to new beliefs about money.</p>
+          <p>Guided evening audio sessions made to be played during the drowsy window before sleep, when your mind is most receptive to new beliefs about money and worth.</p>
           <div class="value">Value: <b>$197</b></div>
         </div>
       </div>
 
       <div class="item">
-        <div class="cover c-1"><span class="cs">Bonus 01</span><span class="sym">✦</span><span class="ct">Quick-Start Companion</span></div>
+        <div class="cover c-1"><span class="cs">Bonus 01</span><span class="sym">✎</span><span class="ct">21-Day Abundance Journal</span></div>
         <div>
-          <span class="tag free">Free gift #1</span>
-          <h3>The Quick-Start Companion</h3>
-          <p>A step-by-step walkthrough showing exactly when and how to listen so you get the most from every session — and start noticing the shift sooner.</p>
-          <div class="value"><s>$47</s> <b>FREE today</b></div>
+          <span class="tag free">Bonus #1</span>
+          <h3>The 21-Day Abundance Journal</h3>
+          <p>A printable journal with one short prompt per day. Track the small wins, ideas and opportunities that show up — and watch the pattern build over three weeks.</p>
+          <div class="value"><s>$47</s> <b>Included free</b></div>
         </div>
       </div>
 
       <div class="item">
-        <div class="cover c-2"><span class="cs">Bonus 02</span><span class="sym">◉</span><span class="ct">The Third-Eye Reset</span></div>
+        <div class="cover c-2"><span class="cs">Bonus 02</span><span class="sym">≋</span><span class="ct">Deep Rest Soundscapes</span></div>
         <div>
-          <span class="tag free">Free gift #2</span>
-          <h3>The Third-Eye Reset Plan</h3>
-          <p>Simple daily habits around food, light and rest to help you feel clearer, calmer and more focused — so the recordings can do their work.</p>
-          <div class="value"><s>$39</s> <b>FREE today</b></div>
+          <span class="tag free">Bonus #2</span>
+          <h3>Deep Rest Soundscapes</h3>
+          <p>Calming ambient tracks (rain, ocean, soft tones) to help you unwind and drift off easily — perfect to play right after your evening session.</p>
+          <div class="value"><s>$39</s> <b>Included free</b></div>
         </div>
       </div>
 
       <div class="item">
-        <div class="cover c-3"><span class="cs">Bonus 03</span><span class="sym">$</span><span class="ct">Abundance Affirmations</span></div>
+        <div class="cover c-3"><span class="cs">Bonus 03</span><span class="sym">↻</span><span class="ct">Money Story Rewrite</span></div>
         <div>
-          <span class="tag free">Free gift #3</span>
-          <h3>The Abundance Affirmation Scripts</h3>
-          <p>Ready-to-read scripts that train your subconscious to recognize opportunity. Read them alongside the recordings for a deeper effect.</p>
-          <div class="value"><s>$37</s> <b>FREE today</b></div>
+          <span class="tag free">Bonus #3</span>
+          <h3>The Money Story Rewrite Workbook</h3>
+          <p>Uncover the beliefs about money you picked up growing up, and write a new story for yourself in a few guided exercises.</p>
+          <div class="value"><s>$37</s> <b>Included free</b></div>
         </div>
       </div>
     </div>
@@ -379,12 +431,12 @@
 <section style="padding-top:10px">
   <div class="wrap">
     <p class="kicker">How it works</p>
-    <h2>Three minutes a night. <em>That's it.</em></h2>
-    <p class="lead">No affirmations shouted at the mirror, no hours of meditation. Just a simple routine that fits into the end of your day.</p>
+    <h2>A few minutes before bed. <em>Nothing more.</em></h2>
+    <p class="lead">No early-morning routines, no hours of meditation. Just press play as part of winding down at the end of your day.</p>
     <div class="steps">
-      <div class="step"><h4>Get instant access</h4><p>Your login arrives by email seconds after checkout. Listen on any phone, tablet or computer.</p></div>
-      <div class="step"><h4>Press play before sleep</h4><p>Put on headphones, relax and let the recording guide you. The 7-second practice is inside.</p></div>
-      <div class="step"><h4>Notice the shift</h4><p>Pay attention to new ideas, opportunities and the way you feel about money in the days that follow.</p></div>
+      <div class="step"><h4>Order and log in</h4><p>Your access details arrive by email right after checkout. Listen on any phone, tablet or computer.</p></div>
+      <div class="step"><h4>Listen as you wind down</h4><p>Headphones on, lights low. Let the session guide you while you relax into sleep.</p></div>
+      <div class="step"><h4>Journal in the morning</h4><p>Take two minutes with your Abundance Journal to note ideas, wins and opportunities as they appear.</p></div>
     </div>
   </div>
 </section>
@@ -420,8 +472,8 @@
 <section style="padding-top:10px">
   <div class="wrap wrap-sm">
     <div class="note">
-      <p>For most of my life I kept this practice to myself. I wasn't sure people would believe it — and honestly, I wasn't sure I was ready to share it.</p>
-      <p>But I've watched it change too many lives to keep quiet any longer. If it can do for you even a fraction of what it did for me, then sharing it was worth it.</p>
+      <p>I used to think money problems were math problems — earn more, spend less. But no matter how much I earned, I always ended up back in the same place.</p>
+      <p>Changing <em>how I ended my day</em> is what finally broke the cycle. I put this program together so you don't have to spend years figuring it out the way I did. I hope it brings you the same sense of calm and possibility it brought me.</p>
       <p class="sign">— <span class="js-author">Your name here</span></p>
     </div>
   </div>
@@ -437,7 +489,8 @@
       <details><summary>Is this a subscription?</summary><p>No. It's a single one-time payment of $<span class="js-price">37</span>. There are no recurring charges.</p></details>
       <details><summary>Do I need any special equipment?</summary><p>Just a phone or computer and, ideally, a pair of headphones. The sessions work best in a quiet room before sleep.</p></details>
       <details><summary>What if it doesn't work for me?</summary><p>You're covered by our <span class="js-days">60</span>-day money-back guarantee. Email support and you'll receive a full refund.</p></details>
-      <details><summary>How long are the sessions?</summary><p>Each session is short enough to fit into your nightly routine. The core practice itself takes only a few seconds once you've learned it.</p></details>
+      <details><summary>How long are the sessions?</summary><p>Each session is short enough to fit easily into your nightly wind-down. Many people simply let it play as they fall asleep.</p></details>
+      <details><summary>What if I fall asleep during the recording?</summary><p>That's completely fine — and actually expected. The sessions are designed to be listened to as you drift off.</p></details>
     </div>
 
     <div style="margin-top:36px">
